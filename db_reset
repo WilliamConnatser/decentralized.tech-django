@@ -1,1 +1,1 @@
-docker container stop postgres_dev
+python manage.py migrate

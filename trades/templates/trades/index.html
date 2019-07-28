@@ -1,0 +1,14 @@
+{% extends 'trades/layout.html' %}
+
+{% block content %}
+    <h1 class="center-align red lighten-3">{{title}}</h1>
+    <ul class="collections">
+        {% for trade in trades %}
+        <li class="collection-items">
+            {{trade.exchange}}
+            {{trade.trading_pair}}
+            {{trade.trade_id}}
+        </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
